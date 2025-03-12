@@ -1,0 +1,127 @@
+*{
+    margin:0;
+  }
+  
+  .open-sans{font-family: 'Open Sans', sans-serif!important;}
+  .noto-sans{font-family: 'Noto Sans', sans-serif!important;}
+  
+  /*Sidebar*/
+    .sidebar{
+      display:none;
+        width:50%;
+        height:100%;
+        position:absolute;
+        right:0;
+        top:0;
+        background: linear-gradient(#d9d9d9, #f2f2f2);
+        z-index:2;
+      padding:16px;
+      transition:5s;
+    }
+  
+    .Slogo{
+      font-size:64px;
+      font-weight:550;
+      text-decoration:none;
+      text-align:center;
+      letter-spacing:4px;
+      color:black;
+      display:block;
+      padding:10px;
+    }
+  
+    .Slink{
+      font-size:24px;
+      font-weight:400;
+      text-decoration:none;
+      text-align:center;
+      letter-spacing:3px;
+      color:black;
+      display:block;
+      padding:10px;
+    }
+  
+    .Slink:hover{
+      background-color:#ccc;
+    }
+  
+    #close{
+      top:0;
+      right:0;
+      position:fixed;
+      padding:10px;
+      cursor:pointer;
+    }
+  
+  /*Navbar*/
+    .nav-wrapper{
+      z-index:1;
+      background-color:white;
+      padding:32px;
+      box-shadow:0px 2px 4px 0px rgba(0,0,0,.5);
+      position:relative;
+    }
+  
+    .logo{
+      font-size:32px;
+      font-weight:550;
+      text-decoration:none;
+      letter-spacing:4px;
+      color:black;
+      position:absolute;
+      left:5%;
+      top:50%;
+      transform:translate(0%,-50%);
+      padding:5px;
+    }
+  
+    .nav-container{
+      list-style:none;
+      overflow:hidden;
+      position:absolute;
+      top:50%;
+      right:5%;
+      transform:translate(0%,-50%);
+    }
+  
+    .nav-item,.nav-icon{
+      float:left;
+    }
+  
+    .nav-icon{
+      display:none;
+      font-size:24px;
+    }
+  
+    .nav-icon .nav-link{
+      font-size:24px;
+    }
+  
+    .nav-icon .nav-link:hover{
+      background:transparent;
+    }
+  
+    .nav-link{
+      font-size:18px;
+      font-weight:400;
+      text-decoration:none;
+      letter-spacing:3px;
+      color:black;
+      display:block;
+      padding:10px;
+      transition:.5s;
+    }
+  
+    .nav-link:hover{
+      background-color:#ccc;
+    }
+  
+    @media only screen and (max-width:650px){
+      .nav-item{
+        display:none;
+      }
+      .nav-icon{
+        display:block;
+      }
+    }
+  
